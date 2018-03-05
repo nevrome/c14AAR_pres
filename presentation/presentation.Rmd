@@ -1,13 +1,19 @@
 ---
 title: "c14bazAAR & oxcAAR"
+subtitle: Two R packages for the collection, calibration and modelling of 14C dates
 author: "Clemens Schmid, Martin Hinz"
-date: March 2018"
+date: "March 2018"
+institute: Institute of Pre- and Protohistoric Archaeology, Kiel University
 fontsize: 9pt
 output:
   beamer_presentation:
     theme: "metropolis"
 fig_caption: yes
+header-includes:
+  - \titlegraphic{\begin{flushright}\includegraphics[width=.3\textwidth]{../images/logos/isaak_with_text.png}\end{flushright}\hfill}
 ---
+
+
 
 # Slide A
 
