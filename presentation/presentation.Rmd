@@ -14,6 +14,15 @@ header-includes:
   - \metroset{sectionpage=progressbar}
 ---
 
+```{r, echo = FALSE}
+# https://stackoverflow.com/questions/25646333/code-chunk-font-size-in-rmarkdown-with-knitr-and-latex
+def.chunk.hook  <- knitr::knit_hooks$get("chunk")
+knitr::knit_hooks$set(chunk = function(x, options) {
+  x <- def.chunk.hook(x, options)
+  ifelse(options$size != "normalsize", paste0("\\", options$size,"\n\n", x, "\n\n \\normalsize"), x)
+})
+```
+
 # Radiocarbon data
 
 ## The backbone of absolute chronology
@@ -63,6 +72,10 @@ get_dates() %>%           # get dates
 c14bazAAR is the backend of a \textsuperscript{14}C dates search engine: \textbf{\url{www.neolithicRC.de}}
 
 ## Common data structure: The c14_date_list S3 class
+
+```{r size = "small"}
+c14bazAAR::get_aDRAC()
+```
 
 ## Features
 
