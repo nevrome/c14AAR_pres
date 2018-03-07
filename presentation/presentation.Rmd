@@ -41,13 +41,13 @@ header-includes:
 
 ## Idea
 
-## c14bazAAR & neolithicRC
-
 ## Common data structure
 
 ## Features
 
 ## Demotime
+
+## c14bazAAR & neolithicRC
 
 # oxcAAR
 
@@ -57,4 +57,15 @@ header-includes:
 
 ## Whatnot
 
+## Demotime
+
+## Projekt Timeline
+
+![](../images/smartart_history.png)
+
+**Clemens Schmid**                   
+clemens@nevrome.de  
+
+**Martin Hinz**              
+martin.hinz@ufg.uni-kiel.de
 
