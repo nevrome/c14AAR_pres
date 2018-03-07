@@ -40,14 +40,33 @@ header-includes:
 # c14bazAAR
 
 ## Idea
+ c14bazAAR is a R package to **download**, **merge** and **prepare** \textsuperscript{14}C dates from **different source databases**
+ 
+```{r eval = FALSE}
+# basic workflow
+get_dates() %>%           # get dates
+  ...() %>%               
+  calibrate() %>%         # apply some data preparation tools
+  ...() %>%
+  ...() -> list_of_dates  # get a nice date list for your research
+```
 
-## Common data structure
+- User perspective
+    - access many highly different databases with one interface
+    - reproducibility with scripted data selection
+    - standard data structures for direct access to powerful R tools (tidyverse)
+- Developer perspective
+    - Open Source: examine & improve the implementation and adjust everything for your needs
+    - simple parser development framework to add further databases
+    - embed bulk c14 dates into your own application
+    
+c14bazAAR is the backend of a \textsuperscript{14}C dates search engine: \textbf{\url{www.neolithicRC.de}}
+
+## Common data structure: The c14_date_list S3 class
 
 ## Features
 
 ## Demotime
-
-## c14bazAAR & neolithicRC
 
 # oxcAAR
 
