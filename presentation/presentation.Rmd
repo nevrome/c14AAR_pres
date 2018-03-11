@@ -81,7 +81,15 @@ c14bazAAR::get_aDRAC()
 
 ## Features -- calibration
 
-![calibration](../images/smartart_calibration.png)
+![Bulk calibration with calibrate()](../images/smartart_calibration.png)
+
+## Features -- material classification
+
+![simplification of material information with classify_material()](../images/smartart_material_classification.png)
+
+## Features -- country correction
+
+## Features -- duplicates
 
 ## Demotime
 
