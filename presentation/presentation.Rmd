@@ -79,6 +79,10 @@ c14bazAAR::get_aDRAC()
 
 ## Features
 
+## Features -- calibration
+
+![calibration](../images/smartart_calibration.png)
+
 ## Demotime
 
 # oxcAAR
