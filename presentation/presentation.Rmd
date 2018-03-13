@@ -85,9 +85,11 @@ c14bazAAR::get_aDRAC()
 
 ## Features -- material classification
 
-![simplification of material information with classify_material()](../images/smartart_material_classification.png)
+![Simplification of material information with classify_material()](../images/smartart_material_classification.png)
 
 ## Features -- country correction
+
+![Unification of country information with finalize_country()](../images/smartart_country_correction.png)
 
 ## Features -- duplicates
 
