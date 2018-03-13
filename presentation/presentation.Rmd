@@ -92,9 +92,24 @@ c14bazAAR::get_aDRAC()
 
 ## Common data structure: The c14_date_list S3 class
 
-**class variables**
+c14_date_list ...
 
-**class methods**
+- ... is a modified **tibble**/data.frame
+- ... has a set of **predefined variables** -- essence of source databases
+
+\definecolor{ori}{rgb}{0.9215686,0.5058824,0.1058824} 
+
+| **general information** | **location**          | **archaeological context**      | **sample analysis**           |             
+| :---:                   | :-----:               | :-----------:                   | :----:                        |
+| labnr                   | region                | period                          | \textbf{\color{ori}{c14age}}  |
+| sourcedb                | country               | culture                         | \textbf{\color{ori}{c14std}}  |
+| method                  | lat                   | sitetype                        | c13val                        |
+| shortref                | lon                   | feature                         | material                      |
+| comment                 | site                  |                                 | species                       |    
+
+See `c14bazAAR::variable_reference` for the documentation how variables from different databases are related.
+
+- ... provides **own class methods**
 
 ## Features -- calibration
 
