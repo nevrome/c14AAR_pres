@@ -27,6 +27,21 @@ knitr::knit_hooks$set(chunk = function(x, options) {
 
 ## c14bazAAR & oxcAAR
 
+\begin{columns}
+\begin{column}{0.48\textwidth}
+\textbf{c14bazAAR}
+
+R package for \textbf{download} and \textbf{preparation} of \textsuperscript{14}C dates from different source databases
+
+\end{column}
+\begin{column}{0.48\textwidth}
+\textbf{oxcAAR}
+
+R package API to OxCal for reproducible \textsuperscript{14}C \textbf{calibration}, \textbf{sequencing} and \textbf{simulation}
+
+\end{column}
+\end{columns}
+
 # c14bazAAR
 
 ## A thousand databases
@@ -80,8 +95,6 @@ c14bazAAR::get_aDRAC()
 **class variables**
 
 **class methods**
-
-###
 
 ## Features -- calibration
 
