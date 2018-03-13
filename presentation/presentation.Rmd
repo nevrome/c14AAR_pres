@@ -93,6 +93,8 @@ c14bazAAR::get_aDRAC()
 
 ## Features -- duplicates
 
+![Finding duplicates with mark_duplicates()](../images/smartart_duplicates_removal.png)
+
 ## Demotime
 
 # oxcAAR
