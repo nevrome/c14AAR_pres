@@ -147,7 +147,48 @@ See `c14bazAAR::variable_reference` for the documentation how variables from dif
 
 # oxcAAR
 
+## Several possibilities for calibration
+
+### outside of R
+* CalPal, BCal, CALIB, Fairbanks calibration, OxCal, iosacal, MatCal
+* [calibrator](https://github.com/ISAAKiel/calibrator)
+* ChronoModel
+
+### within R
+* [Bchron](http://cran.rstudio.com/web/packages/Bchron/index.html)
+  * ![Andrew Parnell](../images/parnell.jpeg){ height=5% } Andrew Parnell
+* [rcarbon](https://cran.r-project.org/web/packages/rcarbon/index.html)
+  * ![Andrew Bevan](../images/bevan.jpeg){ height=5% } Andrew Bevan
+* [oxcAAR](https://cran.r-project.org/web/packages/oxcAAR/index.html)
+  * ![ISAAK](../images/isaak.png){ height=5% } ISAAK
+
+## Motivation
+
+### Why another calibration package?
+
+*1. Every package produces slightly different results*
+
+![](../images/comp_results_packages-1.png){height=33%} ![](../images/comp_results_packages_detail-1.png){height=33%}
+
+*2. Sequential Calibration with other tools (currently) not available*
+
+![](../images/make_string_for_sequence_calibration-1.png){width=33%}
+
 ## Idea
+
+ oxcAAR is a R package to **calibrate**, **simulate** and **sum** \textsuperscript{14}C dates using **OxCal** as calibration engine
+
+```{r echo = FALSE, message=FALSE}
+if(!require('devtools')) install.packages('devtools')
+library(devtools)
+install_github('ISAAKiel/oxcAAR')
+library(oxcAAR)
+```
+
+```{r message=FALSE, size = 'tiny'}
+quickSetupOxcal() # download Oxcal to tempory folder
+oxcalCalibrate( bp=5000, std=20) # do the calibration
+```
 
 ## Features 
 
