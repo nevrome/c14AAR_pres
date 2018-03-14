@@ -25,6 +25,9 @@ knitr::knit_hooks$set(chunk = function(x, options) {
 
 ## \textsuperscript{14}C: The backbone of absolute chronology
 
+- Renfrew: second scientific revolution (Abbildung)
+- Goldstandard / Allgegenwart + Libby (Charakterkopf?)
+
 ![Vere Gordon Childe](../images/childe.png){height=33%} ![Willard Libby](../images/libby_a.png){height=33%} ![Colin Renfrew](../images/migrated_Renfrew__Colin_0.jpg){height=33%} ![Thomas Bayes](../images/Thomas_Bayes.png){height=33%}
 
 ## c14bazAAR & oxcAAR
@@ -35,11 +38,19 @@ knitr::knit_hooks$set(chunk = function(x, options) {
 
 R package for \textbf{download} and \textbf{preparation} of \textsuperscript{14}C dates from different source databases
 
+\
+
+\includegraphics{../images/smartart_c14bazAAR_package.png}
+
 \end{column}
 \begin{column}{0.48\textwidth}
 \textbf{oxcAAR}
 
 R package API to OxCal for reproducible \textsuperscript{14}C \textbf{calibration}, \textbf{sequencing} and \textbf{simulation}
+
+\
+
+\includegraphics{../images/smartart_oxcAAR_package.png}
 
 \end{column}
 \end{columns}
