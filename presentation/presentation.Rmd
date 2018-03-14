@@ -25,6 +25,8 @@ knitr::knit_hooks$set(chunk = function(x, options) {
 
 ## \textsuperscript{14}C: The backbone of absolute chronology
 
+![Vere Gordon Childe](../images/childe.png){height=33%} ![Willard Libby](../images/libby_a.png){height=33%} ![Colin Renfrew](../images/migrated_Renfrew__Colin_0.jpg){height=33%} ![Thomas Bayes](../images/Thomas_Bayes.png){height=33%}
+
 ## c14bazAAR & oxcAAR
 
 \begin{columns}
