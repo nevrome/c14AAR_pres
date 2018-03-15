@@ -181,22 +181,31 @@ c14bazAAR::get_all_dates() %>%
 * ChronoModel
 
 ### within R
-* [Bchron](http://cran.rstudio.com/web/packages/Bchron/index.html)
-  * ![Andrew Parnell](../images/parnell.jpeg){ height=5% } Andrew Parnell
-* [rcarbon](https://cran.r-project.org/web/packages/rcarbon/index.html)
-  * ![Andrew Bevan](../images/bevan.jpeg){ height=5% } Andrew Bevan
-* [oxcAAR](https://cran.r-project.org/web/packages/oxcAAR/index.html)
-  * ![ISAAK](../images/isaak.png){ height=5% } ISAAK
+* ![Andrew Parnell](../images/parnell.jpeg){ height=5% } Andrew Parnell:  [**Bchron**](http://cran.rstudio.com/web/packages/Bchron/index.html)
 
-## Motivation
+```{r, eval = FALSE}
+Bchron::BchronCalibrate(5000, 30, calCurves = "intcal13")
+```
 
-### Why another calibration package?
+* ![Andrew Bevan](../images/bevan.jpeg){ height=5% } Andrew Bevan:  [**rcarbon**](https://cran.r-project.org/web/packages/rcarbon/index.html)
+  
+```{r, eval = FALSE}
+rcarbon::calibrate(5000, 30)
+```
 
-*1. Every package produces slightly different results*
+* ![ISAAK](../images/isaak.png){ height=5% } ISAAK:  [**oxcAAR**](https://cran.r-project.org/web/packages/oxcAAR/index.html)
+
+```{r, eval = FALSE}
+oxcAAR::oxcalCalibrate(5000, 30)
+```
+
+## Motivation: Why another calibration package?
+
+1. Every package produces **slightly different results**
 
 ![](../images/comp_results_packages-1.png){height=33%} ![](../images/comp_results_packages_detail-1.png){height=33%}
 
-*2. Sequential Calibration with other tools (currently) not available*
+2. **Sequential calibration** with other tools (currently) not available
 
 ![](../images/make_string_for_sequence_calibration-1.png){width=33%}
 
