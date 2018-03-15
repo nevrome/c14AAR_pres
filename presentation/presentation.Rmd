@@ -12,6 +12,8 @@ fig_caption: yes
 header-includes:
   - \titlegraphic{\begin{flushright}\includegraphics[width=.3\textwidth]{../images/logos/isaak_with_text.png}\end{flushright}\hfill}
   - \metroset{sectionpage=progressbar}
+  - \usepackage{subfig}
+  - \usepackage{caption}
 editor_options: 
   chunk_output_type: console
 ---
@@ -25,17 +27,22 @@ knitr::knit_hooks$set(chunk = function(x, options) {
 })
 knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
 ```
-```
 
 ## \textsuperscript{14}C: The backbone of absolute chronology
 
-- ^14^C has revolutionized the previous typology-based chronology
-- only the calibration made the method useful as a tool for absolute chronology
-- thanks to Bayesian statistics, accuracy now reaches the level of generations
-- ^14^C data are gold standard today for much of the (pre-)history
-- no archaeologist can work meaningfully at present without using 14C data
+- ^14^C has revolutionized the previous **typology-based chronology**
+- only the **calibration** made the method useful for **absolute chronology**
+- thanks to **Bayesian statistics**, **Monte-Carlo simulation** and seriation based models, accuracy now reaches the level of generations
+- ^14^C data are **gold standard** today for much of the (pre-)history: no archaeologist can work meaningfully at present without using ^14^C data
 
-![Vere Gordon Childe](../images/childe.png){height=33%} ![Willard Libby](../images/libby_a.png){height=33%} ![Colin Renfrew](../images/migrated_Renfrew__Colin_0.jpg){height=33%} ![Thomas Bayes](../images/Thomas_Bayes.png){height=33%}
+\begin{figure}
+\captionsetup[subfigure]{labelformat=empty}
+\centering
+\subfloat[]{\includegraphics[height=1.3in]{../images/childe.png}}
+\subfloat[]{\includegraphics[width=1in, height=1.3in]{../images/libby_a.png}}
+\subfloat[]{\includegraphics[height=1.3in]{../images/migrated_Renfrew__Colin_0.jpg}}
+\subfloat[]{\includegraphics[height=1.3in]{../images/Thomas_Bayes.png}}
+\end{figure} 
 
 ## c14bazAAR & oxcAAR
 
