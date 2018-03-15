@@ -143,9 +143,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.0343421"
-     inkscape:cx="419.6827"
-     inkscape:cy="824.75928"
+     inkscape:zoom="1.4627806"
+     inkscape:cx="377.7333"
+     inkscape:cy="817.04308"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -1299,24 +1299,6 @@
     <rect
        inkscape:export-ydpi="299.99673"
        inkscape:export-xdpi="299.99673"
-       style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#eb811b;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect1127"
-       width="60.075905"
-       height="7.6107903"
-       x="141.06201"
-       y="116.68159" />
-    <rect
-       inkscape:export-ydpi="299.99673"
-       inkscape:export-xdpi="299.99673"
-       y="124.29237"
-       x="141.06201"
-       height="7.6107979"
-       width="60.07592"
-       id="rect1129"
-       style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#eb811b;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    <rect
-       inkscape:export-ydpi="299.99673"
-       inkscape:export-xdpi="299.99673"
        y="124.29238"
        x="71.990318"
        height="7.6107903"
@@ -1738,5 +1720,23 @@
        sodipodi:nodetypes="cc"
        inkscape:export-xdpi="299.99673"
        inkscape:export-ydpi="299.99673" />
+    <rect
+       inkscape:export-ydpi="299.99673"
+       inkscape:export-xdpi="299.99673"
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#eb811b;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect1127"
+       width="60.075905"
+       height="7.6107903"
+       x="141.06201"
+       y="116.68159" />
+    <rect
+       inkscape:export-ydpi="299.99673"
+       inkscape:export-xdpi="299.99673"
+       y="124.29237"
+       x="141.06201"
+       height="7.6107979"
+       width="60.07592"
+       id="rect1129"
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#eb811b;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
   </g>
 </svg>
