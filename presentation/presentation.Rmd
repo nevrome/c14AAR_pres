@@ -12,6 +12,8 @@ fig_caption: yes
 header-includes:
   - \titlegraphic{\begin{flushright}\includegraphics[width=.3\textwidth]{../images/logos/isaak_with_text.png}\end{flushright}\hfill}
   - \metroset{sectionpage=progressbar}
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r, echo = FALSE}
@@ -183,6 +185,7 @@ if(!require('devtools')) install.packages('devtools')
 library(devtools)
 install_github('ISAAKiel/oxcAAR')
 library(oxcAAR)
+library(dplyr)
 ```
 
 ```{r message=FALSE, size = 'tiny'}
@@ -190,7 +193,42 @@ quickSetupOxcal() # download Oxcal to tempory folder
 oxcalCalibrate( bp=5000, std=20) # do the calibration
 ```
 
-## Features 
+## Accessing the calibration result - structure
+
+```{r message=FALSE, size = 'tiny'}
+my_cal_date <- oxcalCalibrate( bp=5000, std=20)
+str(my_cal_date, max.level = 3)
+```
+
+## Accessing the calibration result - for basic plot
+
+```{r message=FALSE, size = 'tiny', out.height = "50%", fig.align = "center"}
+plot(
+  my_cal_date$`1`$raw_probabilities$dates,
+  my_cal_date$`1`$raw_probabilities$probabilities,
+  type = "l", xlab = "years", ylab = "probs"
+  )
+```
+
+## Features - plotting an individual date
+
+Plotting an individual date
+
+```{r message=FALSE, size = 'tiny', out.height = "75%", fig.align = "center"}
+oxcalCalibrate( bp=5000, std=20) %>% plot()
+```
+
+## Features - plotting multiple dates
+
+```{r message=FALSE, size = 'tiny', out.height = "75%", fig.align = "center"}
+oxcalCalibrate( bp=c(5000,5200), std=c(20,25)) %>% plot()
+```
+
+## Features - plotting on the calibration curve
+
+```{r message=FALSE, size = 'tiny', out.height = "75%", fig.align = "center"}
+oxcalCalibrate( bp=c(5000,5200), std=c(20,25)) %>% calcurve_plot()
+```
 
 ## Whatnot
 
