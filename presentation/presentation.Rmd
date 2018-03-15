@@ -207,7 +207,7 @@ plot(
   my_cal_date$`1`$raw_probabilities$dates,
   my_cal_date$`1`$raw_probabilities$probabilities,
   type = "l", xlab = "years", ylab = "probs"
-  )
+)
 ```
 
 ## Features - plotting an individual date
@@ -230,7 +230,59 @@ oxcalCalibrate( bp=c(5000,5200), std=c(20,25)) %>% plot()
 oxcalCalibrate( bp=c(5000,5200), std=c(20,25)) %>% calcurve_plot()
 ```
 
-## Whatnot
+## Features - simulating a R_Date
+
+```{r message=FALSE, size = 'tiny', out.height = "75%", fig.align = "center"}
+oxcalSimulate(-3400, 25, "SimDate_1") %>% plot()
+```
+
+## Features - simulating a sum calibration
+
+```{r message=FALSE, size = 'tiny', out.height = "50%", fig.align = "center"}
+oxcalSumSim(
+  timeframe_begin = -4000, # From when
+  timeframe_end = -3000, # To when
+  n = 50, # Number of dates
+  stds = 35, # Standard deviation of dates (can also be a vector of length n)
+  date_distribution = "uniform" # random uniform; alternatively: equidist for equidistant dates
+) %>% plot()
+```
+
+## Features - injecting arbitray OxCal code
+
+```{r message=FALSE, size = 'tiny', out.height = "50%", fig.align = "center"}
+my_sequence <- Sequence(
+  c(
+    Boundary("begin"),
+    Phase(
+      R_Date(
+        c("ABC-123", "ABC-321"),
+        c(5020, 5200),
+        20), "first"
+    ),
+    Boundary("between"),
+    Phase(
+      R_Date(
+        c("CBA-123","CBA-321"),
+        c(5010, 4810),
+        20), "second"
+    ),
+    Boundary("end")
+  ), "my_sequence"
+)
+cat(my_sequence)
+```
+
+## Features - using Bayesian calibration of OxCal
+
+```{r message=FALSE, size = 'tiny', out.height = "50%", fig.align = "center"}
+my_result_data  <- my_sequence %>%
+  executeOxcalScript() %>%
+  readOxcalOutput() %>%
+  parseOxcalOutput(only.R_Date = F)
+
+plot(my_result_data)
+```
 
 ## Demotime
 
