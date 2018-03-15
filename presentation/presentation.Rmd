@@ -156,7 +156,19 @@ See `c14bazAAR::variable_reference` for the documentation how variables from dif
 
 ## Demotime
 
-```{r, eval = FALSE}
+```{r, eval = FALSE, size = 'LARGE'}
+library(magrittr)
+
+c14bazAAR::get_all_dates() %>%
+  # dplyr::sample_n(500) %>%
+  # c14bazAAR::as.c14_date_list() %>%
+  c14bazAAR::calibrate(
+    choices = c("calprobdistr", "calrange")
+  ) %>%
+  c14bazAAR::classify_material() %>%
+  c14bazAAR::finalize_country_name() %>% 
+  c14bazAAR::mark_duplicates() %>%
+  dplyr::arrange(dplyr::desc(c14age))
 ```
 
 # oxcAAR
