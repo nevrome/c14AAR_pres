@@ -284,7 +284,18 @@ my_result_data  <- my_sequence %>%
 plot(my_result_data)
 ```
 
-## Demotime
+## State and Roadmap
+
+* c14bazAAR
+  * Ready for takeoff at Github
+    * [https://github.com/ISAAKiel/c14bazAAR](https://github.com/ISAAKiel/c14bazAAR)
+    * CRAN release within this month
+* oxcAAR
+  * oxcAAR 1.0.0 'Nicola' released at CRAN
+  * Bayesian Calibration available at Github
+    * [https://github.com/ISAAKiel/oxcAAR](https://github.com/ISAAKiel/oxcAAR)
+  * oxcAAR 1.1.0 'Flora'
+    * CRAN release within this month
 
 ## Projekt Timeline
 
