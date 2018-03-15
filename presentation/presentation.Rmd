@@ -101,15 +101,15 @@ get_dates() %>%           # get dates
 ```
 
 - User perspective
-    - access many highly different databases with one interface
-    - reproducibility with scripted data selection
-    - standard data structures for direct access to powerful R tools (tidyverse)
+    - access many highly different databases with **one interface**
+    - **reproducibility** with scripted data selection
+    - standard data structure for direct access to powerful R tools (**tidyverse**)
 - Developer perspective
-    - Open Source: examine & improve the implementation and adjust everything for your needs
-    - simple parser development framework to add further databases
-    - embed bulk c14 dates into your own application
+    - **Open Source**: examine & improve the implementation and adjust everything for your needs
+    - simple **parser** development framework to add further databases
+    - embed bulk c14 dates into **your own application**
     
-c14bazAAR is the backend of a \textsuperscript{14}C dates search engine: \textbf{\url{www.neolithicRC.de}}
+c14bazAAR provides a \textsuperscript{14}C dates search engine: \LARGE{\textbf{\url{www.neolithicRC.de}}}
 
 ## Common data structure: The c14_date_list S3 class
 
