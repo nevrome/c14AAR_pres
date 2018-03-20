@@ -30,10 +30,9 @@ knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
 
 ## \textsuperscript{14}C: The backbone of absolute chronology
 
-- ^14^C has revolutionized the previous **typology-based chronology**
-- only the **calibration** made the method useful for **absolute chronology**
-- thanks to **Bayesian statistics**, **Monte-Carlo simulation** and seriation based models, accuracy now reaches the level of generations
-- ^14^C data are **gold standard** today for much of the (pre-)history: no archaeologist can work meaningfully at present without using ^14^C data
+- ^14^C dating with calibration has **revolutionized** the previous typology-based **chronology** in many branches of archaeology
+- thanks to **Bayesian statistics**, **Monte-Carlo simulation** and **seriation based models**, **accuracy** now reaches the **level of generations**
+- ^14^C data are **gold standard** today for much of the (pre-)history: almost no archaeologist can work meaningfully at present without using ^14^C data
 
 \begin{figure}
 \captionsetup[subfigure]{labelformat=empty}
