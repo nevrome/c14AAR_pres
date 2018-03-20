@@ -37,3 +37,4 @@ presentation/*_cache/
 # Rendered docs
 *.html
 *.pdf
+!presentation/presentation.pdf
